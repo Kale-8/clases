@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Básico",
+    "price": 5.99,
+    "max_books_per_month": 3,
+    "description": "Acceso a 3 préstamos de libros al mes."
+  },
+  {
+    "id": 2,
+    "name": "Premium",
+    "price": 9.99,
+    "max_books_per_month": 10,
+    "description": "Acceso a 10 préstamos de libros al mes."
+  }
+]

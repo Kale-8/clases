@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "book_id": 2,
+    "borrower_id": 1,
+    "owner_id": 2,
+    "loan_date": "2025-03-16",
+    "return_date": "2025-03-30",
+    "actual_return_date": null,
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "book_id": 1,
+    "borrower_id": 2,
+    "owner_id": 1,
+    "loan_date": "2025-02-01",
+    "return_date": "2025-02-15",
+    "actual_return_date": "2025-02-16",
+    "status": "late"
+  }
+]

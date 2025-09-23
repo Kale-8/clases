@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "user_id": 2,
+    "plan_id": 1,
+    "start_date": "2025-03-01",
+    "end_date": "2025-04-01",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "plan_id": 2,
+    "start_date": "2025-01-20",
+    "end_date": "2025-02-20",
+    "status": "expired"
+  }
+]

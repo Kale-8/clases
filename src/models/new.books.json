@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "Cien Años de Soledad",
+    "author": "Gabriel García Márquez",
+    "isbn": "9780307474728",
+    "genre": "Realismo mágico",
+    "language": "es",
+    "cover_url": "https://example.com/cien_anos.jpg",
+    "description": "Obra maestra de la literatura latinoamericana.",
+    "owner_id": 1,
+    "status": "available",
+    "created_at": "2025-03-12T11:00:00Z"
+  },
+  {
+    "id": 2,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "isbn": "9780132350884",
+    "genre": "Programación",
+    "language": "en",
+    "cover_url": "https://example.com/clean_code.jpg",
+    "description": "Principios, patrones y buenas prácticas para un código limpio.",
+    "owner_id": 2,
+    "status": "borrowed",
+    "created_at": "2025-03-15T09:15:00Z"
+  }
+]
