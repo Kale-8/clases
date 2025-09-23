@@ -2,6 +2,7 @@ import 'dotenv/config'
 import express from 'express';
 import cors from 'cors';
 import {router, initRoutes} from "./routes/index.ts";
+import {requestLogger} from "./middlewares/logger.middleware.ts";
 
 const port = process.env.PORT || 3001;
 const app = express();
@@ -13,6 +14,7 @@ app.use(cors({
 }));
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use(requestLogger);
 
 await initRoutes();
 app.use(router);

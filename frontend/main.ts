@@ -5,6 +5,7 @@ const endpointInput = document.getElementById("endpoint") as HTMLInputElement;
 const sendBtn = document.getElementById("sendBtn") as HTMLButtonElement;
 const responseBox = document.getElementById("response") as HTMLElement;
 const bodyInput = document.getElementById("bodyInput") as HTMLTextAreaElement;
+const tokenInput = document.getElementById("token") as HTMLInputElement; // <--- Nuevo input para el token
 
 methodSelect.addEventListener("change", () => {
     if (["POST", "PUT"].includes(methodSelect.value)) {
@@ -36,7 +37,19 @@ sendBtn.addEventListener("click", async () => {
     }
 
     try {
-        const res = await axios({method, url: endpoint, data});
+        const headers: Record<string, string> = {};
+
+        if (tokenInput && tokenInput.value.trim()) {
+            headers["Authorization"] = `Bearer ${tokenInput.value.trim()}`;
+        }
+
+        const res = await axios({
+            method,
+            url: endpoint,
+            data,
+            headers,
+        });
+
         if (res.data && "data" in res.data && "color" in res.data) {
             responseBox.textContent = JSON.stringify(res.data.data, null, 2);
             responseBox.style.color = res.data.color;

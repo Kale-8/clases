@@ -16,10 +16,12 @@
             <option>DELETE</option>
         </select>
 
+        <input type="text" id="token" placeholder="Authorization Token"/>
+
         <input
                 type="text"
                 id="endpoint"
-                placeholder="http://localhost:3001/users"
+                placeholder="http://localhost:3000/books"
                 style="flex: 1; padding: 0.4rem;"
         />
 
@@ -27,7 +29,7 @@
     </div>
 
     <!-- Request body -->
-    <textarea id="bodyInput" placeholder='{"name": "John"}'
+    <textarea id="bodyInput" placeholder='{"title": "my book", "author": "me"}'
               style="width: 100%; height: 120px; padding: 0.5rem; margin-bottom: 1rem; font-family: monospace; display: none;">
     </textarea>
 
